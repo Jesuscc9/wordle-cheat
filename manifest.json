@@ -7,5 +7,10 @@
 	"action": {
 		"default_popup": "index.html",
 		"default_title": "Latest Covid Report"
-	}
+	},
+	"content_scripts": [{
+		"matches": ["*://*.wordle.danielfrg.com/*"],
+		"js": ["content.js"]
+	}],
+	"permissions": ["activeTab"]
 }

@@ -1,15 +1,15 @@
 {
-	"name": "Covid-19 Stats UK",
+	"name": "Wrole",
 	"version": "1.0.0",
-	"description": "latest covid data of UK",
+	"description": "extension para ayudar a resolver wordle",
 	"manifest_version": 3,
-	"author": "Sampurna Chapagain",
+	"author": "lpdla",
 	"action": {
 		"default_popup": "index.html",
-		"default_title": "Latest Covid Report"
+		"default_title": "Wordle helper"
 	},
 	"content_scripts": [{
-		"matches": ["*://*.wordle.danielfrg.com/*"],
+		"matches": ["*://*.wordle.danielfrg.com/*", "https://wordleespanol.org/"],
 		"js": ["content.js"]
 	}],
 	"permissions": ["activeTab"]
